@@ -21,8 +21,23 @@
 - 입력장치: 어떤 데이터를 CPU가 처리할 수 있도록 디지털 신호로 변환해주는 장치
 - 출력장치: 디지털 신호를 출력할수 있게 변환해주는 장치
 - 제어장치(Controll Unit): 명령 처리를 담당
+
+        Hardwired(고정 배선제어 방식) : 제어신호가 Hardwired Circuit에 의해 생성 / RISC 시스템에 적용
+        Micro Program : 발생 가능한 제어 신호의 조합을 미리 구성하여 ROM에 저장(필요시 신호 발생시킴) / CISC 시스템에 적용
 - 산술/논리장치(Arithmetic Logic Unit): 연산을 담당
-- 레지스터: 임시로 데이터를 보관하는 역할
+- 레지스터: CPU 내부의 메모리
+
+        IR(Instruction Register): 현재 수행중인 명령어 부호를 저장하는 레지스터
+        PC(Program Counter): 명령이 저장된 메모리의 주소를 가르키는 레지스터
+        AC(Accumulator): 연산 결과를 임시로 저장하는 레지스터
+        
+* CPU 명령어 수행 과정
+1. Fetch Instrunction: 메모리에서 명령을 가져옴
+2. Decode Instruction: 명령 해석
+3. Execute Instruction: 명령 수행
+4. Wrte Back: 수행 결과 기록
+
+
 
 
 
